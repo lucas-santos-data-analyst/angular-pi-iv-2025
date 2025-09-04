@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path:'contador',
     loadChildren: () => import('./contador/contador-module').then(m => m.ContadorModule)
+  },
+  {
+    path: 'angularMaterial',
+    loadChildren: ()=> import('./angular-material/angular-material-module').then(m => m.AngularMaterialModule)
   }
 ];
 
